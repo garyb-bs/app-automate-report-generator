@@ -32,7 +32,7 @@ if [ ! $jq_found_status -eq 0 ]; then
   jqpath=$(echo $PWD/jq);
 fi;
 
-curl -s -L "https://raw.githubusercontent.com/garyb-bs/app-automate-report-generator/template/template.html" > template.html
+curl -s -L "https://raw.githubusercontent.com/garyb-bs/app-automate-report-generator/main/template.html" > template.html
 
 echo "[INFO] USERNAME - $BROWSERSTACK_USERNAME\tACCESS KEY - $BROWSERSTACK_ACCESS_KEY";
 echo "[INFO] Downloading sessions for Build ID - $BROWSERSTACK_BUILD_NAME";

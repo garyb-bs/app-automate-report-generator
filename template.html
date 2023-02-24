@@ -230,11 +230,11 @@
 					}
 
 					let consoleLogsTd = document.createElement("td");
-					// if (session.appium_logs_url) {
-					consoleLogsTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/appium_logs.txt">Open</a>`;
-					// } else {
-						// consoleLogsTd.textContent = "-";
-					// }
+					if (session.appium_logs_url) {
+						consoleLogsTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/appium_logs.txt">Open</a>`;
+					} else {
+						consoleLogsTd.textContent = "-";
+					}
 
 					let networkLogsTd = document.createElement("td");
 					if (session.browser_console_logs_url) {
