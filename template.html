@@ -237,22 +237,22 @@
 					}
 
 					let networkLogsTd = document.createElement("td");
-					if (session.browser_console_logs_url) {
+					if (session.network_logs_url) {
 						networkLogsTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/network_logs.txt">Open</a>`;
 					} else {
 						networkLogsTd.textContent = "-";
 					}
 
 					let videoLogsTd = document.createElement("td");
-					if (session.browser_console_logs_url) {
+					if (session.video_url) {
 						videoLogsTd.innerHTML = `<a target="_blank" href="${session.video_url}">Open</a>`;
 					} else {
 						videoLogsTd.textContent = "-";
 					}
 
 					let seleniumLogsTd = document.createElement("td");
-					if (session.browser_console_logs_url) {
-						seleniumLogsTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/selenium_logs.txt">Open</a>`;
+					if (session.device_logs_url) {
+						seleniumLogsTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/device_logs.txt">Open</a>`;
 					} else {
 						seleniumLogsTd.textContent = "-";
 					}
