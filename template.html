@@ -230,6 +230,7 @@
 					}
 
 					let consoleLogsTd = document.createElement("td");
+					console.log(session.browser_console_logs_url);
 					if (session.browser_console_logs_url) {
 						consoleLogsTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/console_logs.txt">Open</a>`;
 					} else {

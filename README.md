@@ -1,4 +1,4 @@
-# automate-report-generator
+# app-automate-report-generator
 
 This repository contains bash scripts which can generate HTML reports for Builds that you run on BrowserStack Automate.
 
