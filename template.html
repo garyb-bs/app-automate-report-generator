@@ -256,13 +256,6 @@
 						deviceLogsTd.textContent = "-";
 					}
 
-					let terminalLogsTd = document.createElement("td");
-					if (session.session_terminal_logs_url) {
-						terminalLogsTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/terminal_logs.txt">Open</a>`;
-					} else {
-						terminalLogsTd.textContent = "-";
-					}
-
 					let durationTd = document.createElement("td");
 					durationTd.textContent = parseInt(session.duration);
 
