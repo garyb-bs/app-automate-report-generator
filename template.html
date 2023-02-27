@@ -264,13 +264,6 @@
 						terminalLogsTd.textContent = "-";
 					}
 
-					let appProfilingTd = document.createElement("td");
-					if (session.session_terminal_logs_url) {
-						appProfilingTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/app_profiling.txt">Open</a>`;
-					} else {
-						appProfilingTd.textContent = "-";
-					}
-
 					let durationTd = document.createElement("td");
 					durationTd.textContent = parseInt(session.duration);
 
@@ -288,7 +281,6 @@
 						networkLogsTd,
 						videoLogsTd,
 						deviceLogsTd,
-						terminalLogsTd,
 						appProfilingTd,
 						durationTd,
 						sessionIdTd
