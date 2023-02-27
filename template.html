@@ -256,6 +256,13 @@
 						deviceLogsTd.textContent = "-";
 					}
 
+					let appProfilingTd = document.createElement("td");
+					if (session.device_logs_url) {
+						appProfilingTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/app_profiling.txt">Open</a>`;
+					} else {
+						appProfilingTd.textContent = "-";
+					}
+
 					let durationTd = document.createElement("td");
 					durationTd.textContent = parseInt(session.duration);
 
