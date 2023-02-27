@@ -65,6 +65,7 @@ for session in $(echo $sessions | $jqpath -cr '.[]'); do
   appiumLogsUrl=$(echo $session_json | $jqpath -cr '.appium_logs_url');
   networkLogsUrl=$(echo $session_json | $jqpath -cr '.har_logs_url');
   deviceLogsUrl=$(echo $session_json | $jqpath -cr '.device_logs_url');
+  terminalLogsUrl=$(echo $session_json | $jqpath -cr '.session_terminal_logs_url');
   echo $hashed_id;
   echo $textLogsURL;
   echo $appiumLogsUrl;
@@ -76,6 +77,9 @@ for session in $(echo $sessions | $jqpath -cr '.[]'); do
   curl -s -u "$BROWSERSTACK_USERNAME:$BROWSERSTACK_ACCESS_KEY" "$appiumLogsUrl" > "$hashed_id"/appium_logs.txt;
   curl -s -u "$BROWSERSTACK_USERNAME:$BROWSERSTACK_ACCESS_KEY" "https://api-cloud.browserstack.com/app-automate/builds/" + $BROWSERSTACK_BUILD_NAME + "/sessions/" + $hashed_id + "/networklogs" > "$hashed_id"/network_logs.txt;
   curl -s -u "$BROWSERSTACK_USERNAME:$BROWSERSTACK_ACCESS_KEY" "$deviceLogsUrl" > "$hashed_id"/device_logs.txt;
+  curl -s -u "$BROWSERSTACK_USERNAME:$BROWSERSTACK_ACCESS_KEY" "$terminalLogsUrl" > "$hashed_id"/terminal_logs.txt;
+  curl -s -u "$BROWSERSTACK_USERNAME:$BROWSERSTACK_ACCESS_KEY" "https://app-automate.browserstack.com/api/v1/sessions/" + $hashed_id + "/app_profiling" > "$hashed_id"/app_profiling.txt;
+  
 
   echo "[TRACE] Loaded data for session ID: $hashed_id";
 done;

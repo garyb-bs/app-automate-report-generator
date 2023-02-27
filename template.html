@@ -146,9 +146,9 @@
 										<th><abbr title="Appium Logs">Appium Logs</abbr></th>
 										<th><abbr title="Network Logs">Network Logs</abbr></th>
 										<th><abbr title="Video Logs">Video Logs</abbr></th>
-										<th>
-											<abbr title="Device Logs">Device Logs</abbr>
-										</th>
+										<th><abbr title="Device Logs">Device Logs</abbr></th>
+										<th><abbr title="Terminal Logs">Terminal Logs</abbr></th>
+										<th><abbr title="App Profiling">App Profiling</abbr></th>
 										<th><abbr title="Duration">Duration (seconds)</abbr></th>
 										<th><abbr title="ID">ID</abbr></th>
 									</tr>
@@ -161,8 +161,6 @@
 			</div>
 		</section>
 		<script>
-			var os = require('os');
-			console.log("Hello WORLD")
 			let buildDetails = JSON.parse(atob(`@build`));
 
 			let sessionDetails = JSON.parse(`@session`);
@@ -239,7 +237,7 @@
 					}
 
 					let networkLogsTd = document.createElement("td");
-					if (os.path.getsize(`./${session.hashed_id}/network_logs.txt`) == 0) {
+					if (true) {
 						networkLogsTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/network_logs.txt">Open</a>`;
 					} else {
 						networkLogsTd.textContent = "-";
@@ -252,11 +250,25 @@
 						videoLogsTd.textContent = "-";
 					}
 
-					let seleniumLogsTd = document.createElement("td");
+					let deviceLogsTd = document.createElement("td");
 					if (session.device_logs_url) {
-						seleniumLogsTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/device_logs.txt">Open</a>`;
+						deviceLogsTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/device_logs.txt">Open</a>`;
 					} else {
-						seleniumLogsTd.textContent = "-";
+						deviceLogsTd.textContent = "-";
+					}
+
+					let terminalLogsTd = document.createElement("td");
+					if (session.session_terminal_logs_url) {
+						terminalLogsTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/terminal_logs.txt">Open</a>`;
+					} else {
+						terminalLogsTd.textContent = "-";
+					}
+
+					let appProfilingTd = document.createElement("td");
+					if (session.session_terminal_logs_url) {
+						appProfilingTd.innerHTML = `<a target="_blank" href="./${session.hashed_id}/app_profiling.txt">Open</a>`;
+					} else {
+						appProfilingTd.textContent = "-";
 					}
 
 					let durationTd = document.createElement("td");
