@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Error><Code>InvalidArgument</Code><Message>Only one auth mechanism allowed; only the X-Amz-Algorithm query parameter, Signature query string parameter or the Authorization header should be specified</Message><ArgumentName>Authorization</ArgumentName><ArgumentValue>Basic Z2FyeWJfYkU0SmtVOmlDd3hMOHFva3A2cm9jaE5uRXZ0</ArgumentValue><RequestId>B7WVP8GB1T3HQCTZ</RequestId><HostId>BYHf1e35ybbmB2xsSggJD4f41BLhP+giF8lO4U4ZdwxCoKWv+SJ20ZBRhlQNhFJqdLfqbfafJQw=</HostId></Error>
