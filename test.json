@@ -1,56 +1,26 @@
 {
     "automation_session": {
-        "name": "com.browserstack.tests.LoginTest-wrongUsernameEntered",
-        "duration": 16,
-        "os": "OS X",
-        "os_version": "Monterey",
-        "browser_version": "109.0",
-        "browser": "firefox",
-        "device": null,
-        "status": "passed",
-        "hashed_id": "ad92f9487e0dacb468d699d8e64635e20b999b93",
-        "reason": "CLIENT_STOPPED_SESSION",
-        "build_name": "ObservabilityTest",
-        "project_name": "BrowserStack Sky Italia Tests",
-        "build_hashed_id": "dc2e7da8b9c3b87c0dc2dfb329c77354424f46fc",
-        "test_priority": null,
-        "logs": "https://automate.browserstack.com/builds/dc2e7da8b9c3b87c0dc2dfb329c77354424f46fc/sessions/ad92f9487e0dacb468d699d8e64635e20b999b93/logs",
-        "browserstack_status": "done",
-        "created_at": "2023-01-31T15:05:21.000Z",
-        "browser_url": "https://automate.browserstack.com/builds/dc2e7da8b9c3b87c0dc2dfb329c77354424f46fc/sessions/ad92f9487e0dacb468d699d8e64635e20b999b93",
-        "public_url": "https://automate.browserstack.com/builds/dc2e7da8b9c3b87c0dc2dfb329c77354424f46fc/sessions/ad92f9487e0dacb468d699d8e64635e20b999b93?auth_token=b0a2e2fa10f870842115d3689f3cd09a484c01d8d15bb87bd90424d67cc9f76e",
-        "video_url": "https://automate.browserstack.com/sessions/ad92f9487e0dacb468d699d8e64635e20b999b93/video?token=Q3lxaE4zblZSeWNRanRFRFNOdWw3UkxzR1NvZ0NUa3U5NUk1M2l6WmZuT3dXbnA3clY5R0FzUmx2dThHRFBpbVBPZy9IN2ZXZDBmNVU0dWZrN01kcFE9PS0td3B2WTc2V3NVQWU4VE5TTVQwOUxsQT09--def6e6ecfdbba2a8c7b7ed7bf9e1bff4130b5063\u0026source=rest_api\u0026diff=2085252.546568176",
-        "browser_console_logs_url": "https://automate.browserstack.com/s3-upload/bs-selenium-logs-euw/s3.eu-west-1/ad92f9487e0dacb468d699d8e64635e20b999b93/ad92f9487e0dacb468d699d8e64635e20b999b93-console-logs-v2.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=AKIA2XUQHUQMIXLNZJ22%2F20230224%2Feu-west-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20230224T181949Z\u0026X-Amz-Expires=604800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=c1c7117c7f106da76bf89603412663118f30cc610615897ab516dfdc4f62856a",
-        "har_logs_url": "https://automate.browserstack.com/s3-upload/bs-selenium-logs-euw/s3.eu-west-1/ad92f9487e0dacb468d699d8e64635e20b999b93/ad92f9487e0dacb468d699d8e64635e20b999b93-har-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=AKIA2XUQHUQMIXLNZJ22%2F20230224%2Feu-west-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20230224T181949Z\u0026X-Amz-Expires=604800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=212f3643161f941087b3e75d703fab615cdd16aa3c98d7c0b5eeedf51d1b0cfe",
-        "selenium_logs_url": "https://automate.browserstack.com/s3-upload/bs-selenium-logs-euw/s3.eu-west-1/ad92f9487e0dacb468d699d8e64635e20b999b93/ad92f9487e0dacb468d699d8e64635e20b999b93-selenium-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=AKIA2XUQHUQMIXLNZJ22%2F20230224%2Feu-west-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20230224T181949Z\u0026X-Amz-Expires=604800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=f73ca610de87efce875962edb2da74c695c11d4024d950764e61db1a9a177ff9",
-        "session_terminal_logs_url": "https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/dc2e7da8b9c3b87c0dc2dfb329c77354424f46fc/ad92f9487e0dacb468d699d8e64635e20b999b93-terminal-logs.txt?response-content-type=text%2Fplain\u0026X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=AKIA2XUQHUQMIXLNZJ22%2F20230224%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20230224T181949Z\u0026X-Amz-Expires=604800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=755ca2c38bf47eda4495ef323585c7b413c264e3d9839cad9e69fc31f8f4aa41",
-        "build_terminal_logs_url": "https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/dc2e7da8b9c3b87c0dc2dfb329c77354424f46fc/terminal-logs.txt?response-content-type=text%2Fplain\u0026X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=AKIA2XUQHUQMIXLNZJ22%2F20230224%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20230224T181949Z\u0026X-Amz-Expires=604800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=8403824dfe85bdf4e9d287765014b3dcb281fd673c8cc70776441338ed7ac48b"
-    }
-}
-
-{
-    "automation_session": {
         "name": "com.browserstack.FirstTest-test",
-        "duration": 35,
+        "duration": 32,
         "os": "android",
         "os_version": "12.0",
         "browser_version": "app",
         "browser": null,
-        "device": "Samsung Galaxy S22 Ultra",
+        "device": "Google Pixel 6 Pro",
         "status": "passed",
-        "hashed_id": "5a54917e9af64f604f773127f2382662e6809525",
+        "hashed_id": "56c6a23487fbd3a0b314083218741b45fe42bdf0",
         "reason": "CLIENT_STOPPED_SESSION",
-        "build_name": "bdc-appium-lesson-1  18",
+        "build_name": "bdc-appium-lesson-1  19",
         "project_name": "Banco De Chile - Appium Lessons",
-        "build_hashed_id": "012462721cdf8a1bda5c4bc907fc3f5bd95dbb42",
-        "logs": "https://app-automate.browserstack.com/builds/012462721cdf8a1bda5c4bc907fc3f5bd95dbb42/sessions/5a54917e9af64f604f773127f2382662e6809525/logs",
+        "build_hashed_id": "c4285991f78b73efbfe2dd81a6a6469424adbbaf",
+        "logs": "https://app-automate.browserstack.com/builds/c4285991f78b73efbfe2dd81a6a6469424adbbaf/sessions/56c6a23487fbd3a0b314083218741b45fe42bdf0/logs",
         "browserstack_status": "done",
-        "created_at": "2023-02-20T16:36:37.000Z",
-        "browser_url": "https://app-automate.browserstack.com/builds/012462721cdf8a1bda5c4bc907fc3f5bd95dbb42/sessions/5a54917e9af64f604f773127f2382662e6809525",
-        "public_url": "https://app-automate.browserstack.com/builds/012462721cdf8a1bda5c4bc907fc3f5bd95dbb42/sessions/5a54917e9af64f604f773127f2382662e6809525?auth_token=6fb4adfd24256aad49ae31daaecd7402cf7fa5240204b4e6c7905c30804f825e",
-        "video_url": "https://app-automate.browserstack.com/sessions/5a54917e9af64f604f773127f2382662e6809525/video?token=ZUIxUWEyZmEzS0RraXRsRzlxY1UyYkZ4cFU4bDl3YlZTVDI4bHVrcFYwOWpGSnFrVG9RRHAzTVBBRzlOVWxMaGhkeGxnUWxLb3hwL2hwWkNuNDhGNXc9PS0tSk1qVVUzTXJDMms1d3lJMEZvaEM3Zz09--ed4e62aafac2500650eb13257908102f1216e85b\u0026source=rest_api\u0026diff=352157.946149235",
-        "appium_logs_url": "https://api.browserstack.com/app-automate/builds/012462721cdf8a1bda5c4bc907fc3f5bd95dbb42/sessions/5a54917e9af64f604f773127f2382662e6809525/appiumlogs",
-        "device_logs_url": "https://api.browserstack.com/app-automate/builds/012462721cdf8a1bda5c4bc907fc3f5bd95dbb42/sessions/5a54917e9af64f604f773127f2382662e6809525/devicelogs",
+        "created_at": "2023-02-24T18:47:36.000Z",
+        "browser_url": "https://app-automate.browserstack.com/builds/c4285991f78b73efbfe2dd81a6a6469424adbbaf/sessions/56c6a23487fbd3a0b314083218741b45fe42bdf0",
+        "public_url": "https://app-automate.browserstack.com/builds/c4285991f78b73efbfe2dd81a6a6469424adbbaf/sessions/56c6a23487fbd3a0b314083218741b45fe42bdf0?auth_token=d6f7cda210cbefcf7630b8a5591b57f29cb5e6ab25f9adb9f5ac33b5a69618f1",
+        "video_url": "https://app-automate.browserstack.com/sessions/56c6a23487fbd3a0b314083218741b45fe42bdf0/video?token=YmlZZmZSQ2NRcnB2cDBkTW5qd3U5N2x0NWY0bGVaSFhOM3ZpZmJHSnVFZVAzMThFc3F4aTdRY1BXeUpheHFCOFRDKzdFZWNZRDJJTUo1QVdTYWdSbkE9PS0tQ0F6MGRveXR5bm50Z0ZjUGhhSmRTUT09--c9e4ea738c3d1778f4a18db03ce8199dd61e3f2d\u0026source=rest_api\u0026diff=23.934189462",
+        "appium_logs_url": "https://api.browserstack.com/app-automate/builds/c4285991f78b73efbfe2dd81a6a6469424adbbaf/sessions/56c6a23487fbd3a0b314083218741b45fe42bdf0/appiumlogs",
+        "device_logs_url": "https://api.browserstack.com/app-automate/builds/c4285991f78b73efbfe2dd81a6a6469424adbbaf/sessions/56c6a23487fbd3a0b314083218741b45fe42bdf0/devicelogs",
         "app_details": {
             "app_url": "bs://3ca07d03b4665e5dafcaac3f80c637014d109767",
             "app_name": "com.example.basicproject",
@@ -58,7 +28,7 @@
             "app_custom_id": "BDC_Lesson1_Intro_Android",
             "uploaded_at": "2023-02-20T16:19:42.000Z"
         },
-        "session_terminal_logs_url": "https://app-automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/012462721cdf8a1bda5c4bc907fc3f5bd95dbb42/5a54917e9af64f604f773127f2382662e6809525-terminal-logs.txt?response-content-type=text%2Fplain\u0026X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=AKIA2XUQHUQMIXLNZJ22%2F20230224%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20230224T182629Z\u0026X-Amz-Expires=604800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=b8e2d50e6d8e0c07f429610dd4c9d6a2e6bb0ea218e154953678d40c10a6863a",
-        "build_terminal_logs_url": "https://app-automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/012462721cdf8a1bda5c4bc907fc3f5bd95dbb42/terminal-logs.txt?response-content-type=text%2Fplain\u0026X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=AKIA2XUQHUQMIXLNZJ22%2F20230224%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20230224T182629Z\u0026X-Amz-Expires=604800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=0f1543bf42cc15066b6f79f8a95fed8daf79d887977800411a80d1915e085fe1"
+        "session_terminal_logs_url": "https://app-automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/c4285991f78b73efbfe2dd81a6a6469424adbbaf/56c6a23487fbd3a0b314083218741b45fe42bdf0-terminal-logs.txt?response-content-type=text%2Fplain\u0026X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=AKIA2XUQHUQMIXLNZJ22%2F20230224%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20230224T184831Z\u0026X-Amz-Expires=604800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=cfd94028f3706b155d0804993608f61a9d6475441f5202cb778799d18c6bc9f2",
+        "build_terminal_logs_url": "https://app-automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/c4285991f78b73efbfe2dd81a6a6469424adbbaf/terminal-logs.txt?response-content-type=text%2Fplain\u0026X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=AKIA2XUQHUQMIXLNZJ22%2F20230224%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20230224T184831Z\u0026X-Amz-Expires=604800\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=238fa64da157b1b596ea87d924b863adde652a0d277fe76c0e399c9e1cda422b"
     }
 }
